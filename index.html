@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       <title>MusicV2</title>
+
+    </head>
+
+    <body>
+        <nav>
+            <img src="images/logo.jpg" class="logo" href="#" >
+                <ul>
+                  <li>
+                      <a href="#">Home</a>
+                      <a href="#">Manage</a>
+                      <a href="#">About</a>
+                 </li>
+                </ul>
+        </nav>
+
+        
+
+        <div id="playlist-contaner" class="playlist-contaner">
+            <ul id="playlist">
+                
+            </ul>
+
+        </div>
+
+        <div id="player"  class="player" >
+
+            
+            <img src="images/logo.jpg" id="mcover">
+            <h4 id="mtitle">Donda</h4>
+            
+
+            <div id="player-middle-container" class="player-middle-container">
+                <div class="navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+
+                    <button id="next" class="action-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                </div>
+
+                <div id="playback-bar" class="playback-bar">
+                    <div id="progress-time" class="progress-time"></div>
+                    <div class="progress-container" id= "progress-container">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div id="playback-duration" class="playback-duration"></div>
+                </div>
+
+            </div> 
+
+            <div id="player-right-container" class="player-right-container">
+                <input type="range" id="volume" class="volume-bar" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume" />
+			<datalist id="gain-vals">
+				<option value="0" label="min">
+				<option value="2" label="max">
+			</datalist>
+            </div>
+           
+        </div>
+
+        
+    </body>
+</html>
