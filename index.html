@@ -28,9 +28,48 @@
         
 
         <div id="playlist-contaner" class="playlist-contaner">
-            <ul id="playlist">
-                
-            </ul>
+            <div class="song" class="top-song">
+                <div class="song-cover">
+                    <img src="images/Горький вкус.jpg">
+                </div>
+                <p class="song-name">Горький вкус</p>
+            </div>
+            <div class="song" class="top-song">
+                <div class="song-cover">
+                    <img src="images/Habibi [Albanian Remix].jpg">
+                </div>
+                <p class="song-name">Habibi [Albanian Remix]</p>
+            </div>
+            <div class="song" class="top-song">
+                <div class="song-cover">
+                    <img src="images/Ты мой кайф.jpg">
+                </div>
+                <p class="song-name">Ты мой кайф</p>
+            </div>
+            <div class="song" class="top-song">
+                <div class="song-cover">
+                    <img src="images/Hypnotize.jpg">
+                </div>
+                <p class="song-name">Hypnotize</p>
+            </div>
+            <div class="song" class="top-song">
+                <div class="song-cover">
+                    <img src="images/Imanbek - Goodbye.jpg">
+                </div>
+                <p class="song-name">Imanbek - Goodbye</p>
+            </div>
+            <div class="song" class="top-song">
+                <div class="song-cover">
+                    <img src="images/Touch The Sky.jpg">
+                </div>
+                <p class="song-name">Touch The Sky</p>
+            </div>
+            <div class="song" class="top-song">
+                <div class="song-cover">
+                    <img src="images/Вите Надо Выйти.jpg">
+                </div>
+                <p class="song-name">Вите Надо Выйти</p>
+            </div>
 
         </div>
 
@@ -39,7 +78,7 @@
             
             <img src="images/logo.jpg" id="mcover">
             <h4 id="mtitle">Donda</h4>
-            
+            <audio src="music/Habibi [Albanian Remix].mp3" id=audio></audio>
 
             <div id="player-middle-container" class="player-middle-container">
                 <div class="navigation">
@@ -67,15 +106,12 @@
             </div> 
 
             <div id="player-right-container" class="player-right-container">
-                <input type="range" id="volume" class="volume-bar" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume" />
-			<datalist id="gain-vals">
-				<option value="0" label="min">
-				<option value="2" label="max">
-			</datalist>
+                <input type="range" id="volume" class="volume-bar" min="0.0" max="1.0" value=".5"  step=".05" onchange="changevolume(this.value)" />
+			
             </div>
            
         </div>
 
-        
+        <script src="script.js"></script>  
     </body>
 </html>
