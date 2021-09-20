@@ -101,7 +101,7 @@ playBtn.addEventListener('click', () => {
 song.forEach((item, i) => {
       item.addEventListener("click", () => {
           loadSong(songs[i]);
-          playBtn.click();
+          playSong();
       })
   })
 
